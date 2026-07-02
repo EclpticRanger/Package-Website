@@ -1,0 +1,120 @@
+html, body{
+    margin: 0;
+    background-color: rgb(238, 185, 245);
+    overscroll-behavior: none;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.flex-column{
+    flex-direction: row;
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: column;
+    display: flex;
+}
+
+.home{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; 
+    flex-direction: column;
+}
+
+.header-button{
+    height: 150%;
+    width: 6em;
+    font-size: large;
+    border-color: rgb(203, 110, 200);
+    background-color: rgb(203, 110, 200);
+    color: whitesmoke;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+header {
+    background-color: rgb(203, 110, 200);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-text{
+    color: whitesmoke;
+}
+
+.footer{
+    background-color: rgb(182, 70, 178);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+.link-text{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.download{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    gap: 50px;
+}
+
+.download-button{
+    color: whitesmoke;
+    background-color: rgb(203, 110, 200);
+    border-color: rgb(203, 110, 200);
+    height: 100px;
+    width: 500px;
+    border-radius: 25px;
+    font-size: xx-large;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.info{
+    background-color: rgb(203, 110, 200);   
+    width: 70%;
+    border-radius: 25px;
+    margin-top: 210px;
+    align-content: center;
+}
+
+.info-text{
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+.info-label{
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    font-size: 45px;
+}
+
+.info-button{
+    height: 40px;
+    width: 6em;
+    font-size: large;
+    border-color: rgb(203, 110, 200);
+    background-color: rgb(203, 110, 200);
+    color: whitesmoke;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 10px;
+}
