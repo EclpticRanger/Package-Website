@@ -10,5 +10,9 @@ def home():
 def download():
     return render_template("download.html")
 
+@app.route("/functions")
+def functions():
+    return render_template("functions.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

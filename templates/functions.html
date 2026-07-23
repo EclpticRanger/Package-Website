@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+    <div class="info" style="margin-bottom: 200px;">
+        <h1 class="info-label">Input Functions</h1>
+        <h2 class="info-text">get_int_line(input_text: str, split_string: str)</h2>
+        <h3 class="info-subtext">Returns A list of intigers seporated by the inputed character</h3>
+        <h2 class="info-text">get_float_line(input_text: str, split_string: str)</h2>
+        <h3 class="info-subtext">Returns A list of floats seporated by the inputed character</h3>
+        <h2 class="info-text">get_bool_line(intput_text: int, split_string: str, true_character: str, flase_character: str, default: bool)</h2>
+        <h3 class="info-subtext">Returns A list of Bool seporated by the inputed character<br><br>
+
+    defaults:<br><br>
+        Split_character: " "<br>
+        True: "true"<br>
+        False: "false"<br>
+        defult: False</h3>
+        <h2 class="info-text">int_put(input_text: str)</h2>
+        <h3 class="info-subtext">Returns an intiger input</h3>
+        <h2 class="info-text">float_put(input_text: str)</h2>
+        <h3 class="info-subtext">Returns an float input</h3>
+        <h2 class="info-text">list_put(input_text: str, split_string: str)</h2>
+        <h3 class="info-subtext">Returns an list of an input seporated by the split_string varable</h3>
+        <h2 class="info-text">tupel_put(input_text: str, split_string: str)</h2>
+        <h3 class="info-subtext">Returns an tupel of an input seporated by the split_string varable</h3>
+    </div>
+</div>
+
+{% endblock %}
