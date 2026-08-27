@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+    <div class="info">
+        <h1 class="info-label">
+            Stack
+        </h1>
+        <h2 class="info-text">
+            Creating A Stack
+        </h2>
+        <h3 class="info-subtext">
+            To make a stack varable just do the fallowing <br>
+            <br>
+            My_stack = Stack()
+            <br>
+        </h3>
+
+        <h2 class="info-text">Push()</h2>
+        <h3 class="info-subtext">
+            Pushing a varable to a stack add it to the top <br>
+            <br>
+            My_stack.push(value)
+        </h3>
+
+        <h2 class="info-text">Pop()</h2>
+        <h3 class="info-subtext">
+            Poping the stack removes the top items form stack <br>
+            <br>
+            My_stack.pop()
+        </h3>
+
+        <h2 class="info-text">Peek()</h2>
+        <h3 class="info-subtext">
+            Peeking the stack returnes the top value in the stack <br>
+            <br>
+            Top_value = My_stack.peek()
+        </h3>
+
+        <h2 class="info-text">Is_empty()</h2>
+        <h3 class="info-subtext">
+            Cheeks if the stack is empty and returs a bool weather it is <br>
+            <br>
+            if My_stack.is_empty(): <br>
+                <blockquote>do thing if empty</blockquote>
+        </h3>
+
+        <h2 class="info-text">Size()</h2>
+        <h3 class="info-subtext">
+            Returns the amount of items in the stack <br>
+            <br>
+            Stack_size = My_stack.size()
+        </h3>
+    </div>
+    <div class="info" style="margin-bottom: 250px;">
+        <h1 class="info-label">
+            Queue
+        </h1>
+        <h2 class="info-text">
+            Creating A Queue
+        </h2>
+        <h3 class="info-subtext">
+            To make a queue varable just do the fallowing <br>
+            <br>
+            My_queue = Queue()
+            <br>
+        </h3>
+        <h2 class="info-text">__repr__()</h2>
+        <h3 class="info-subtext">
+            Returns the queue for debuging <br>
+            <br>
+            print(my_queue.__repr__())
+        </h3>
+        <h2 class="info-text">append()</h2>
+        <h3 class="info-subtext">
+            Adds the Value to the end of the queue<br>
+            <br>
+            my_queue.append(my_value)
+        </h3>
+        <h2 class="info-text">appendleft()</h2>
+        <h3 class="info-subtext">
+            Adds the Value to the start of the queue<br>
+            <br>
+            my_queue.appendleft(my_value)
+        </h3>
+        <h2 class="info-text">pop()</h2>
+        <h3 class="info-subtext">
+            Removes a value from end of the queue<br>
+            <br>
+            my_queue.pop()
+        </h3>
+        <h2 class="info-text">popleft()</h2>
+        <h3 class="info-subtext">
+            Removes a value from start of the queue<br>
+            <br>
+            my_queue.popleft()
+        </h3>
+        <h2 class="info-text">clear()</h2>
+        <h3 class="info-subtext">
+            Removes all items form the stack<br>
+            <br>
+            my_queue.clear()
+        </h3>
+        
+    </div>
+</div>
+{% endblock %}

@@ -1,10 +1,10 @@
+
 html {
     --light-background: #b9d9f5;
     --medium-background: #5781ad;
     --dark-background: #375f93;
     --text-color: #f5f5f5;
 }
-
 html, body{
     margin: 0;
     background-color: var(--light-background);
@@ -134,4 +134,53 @@ header {
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
     border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+.info-input{
+    color: var(--text-color-invert);
+    background-color: var(--light-background);
+    border-color: var(--dark-background);
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    text-decoration: none;
+    text-wrap: inherit;
+}
+
+.feedback-button{
+    height: 150%;
+    width: 6em;
+    font-size: large;
+    border-color: var(--dark-background);
+    background-color: var(--dark-background);
+    color: var(--text-color);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.feedback-box{
+    width: 85%;
+    background-color: var(--med-dark-background);
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+.feedback-text{
+    color: var(--text-color);
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.feedback-subtext{
+    color: var(--text-color);
+    padding-left: 50px;
+    padding-bottom: 50px;
+
 }

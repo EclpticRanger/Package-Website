@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+    <div class="info">
+        <h1 class="info-text">Feedback</h1>
+        <h2 class="info-subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, non iusto. Iste sint ea obcaecati ipsum, placeat ullam asperiores quod accusantium fugiat animi. Voluptatibus, laborum quas. Natus itaque perspiciatis eum.</h2>
+        <form action="/feedback" method="POST">
+            <h2 class="info-subtext" style="margin-bottom: 10px;">
+                <br>
+                Name:
+            </h2>
+            <input type="text" class="info-input" placeholder="Type your name here..." name="name"> 
+            <h2 class="info-subtext" style="margin-bottom: 10px;">
+                Feedback:
+            </h2>
+
+            <textarea rows="10" cols="50" placeholder="Type your Feedback here..." class="info-input" style="width: 70%; height: 200px;" name="text"></textarea>
+            <div></div>
+            <button class="feedback-button" style="margin-left: 50px; margin-bottom: 50px;" >Sudmit</button>
+
+        </form>
+    </div>
+    <div class="info" style="margin-bottom: 200px;">
+        <h1 class="info-text">Sudmited Feedback</h1>
+        {% for item in recent_feedback %}
+        <div class="feedback-box">
+            <h1 class="feedback-text">
+                {{ item.username }}
+            </h1>
+            <h2 class="feedback-subtext">
+                {{ item.text }}
+            </h2>
+        </div>
+        {% else %}
+        <h2 class="feedback-subtext">No feedback submitted yet</h2>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

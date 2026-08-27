@@ -1,16 +1,46 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="download">
-    <a href="https://codeload.github.com/EclpticRanger/Ecliptics-Competitive-Tools/zip/refs/tags/Full_Release">
+    <a href="{{ download_link }}">
         <button class="download-button">Download</button>
     </a>
-    <a href="https://github.com/EclpticRanger/Ecliptics-Competitive-Tools/releases/tag/Full_Release">
+    <a href="{{ release_link }}">
         <button class="download-button">Whats New</button>
     </a>
 
     <div class="info">
+        <h1 class="info-label">V 1.2.1</h1>
+        <h2 class="info-text">Added: <br> <br>
+            Stack: <br><br>
+            Push() <br>
+            Pop() <br>
+            Peek() <br>
+            Is_empty() <br>
+            Size() <br> <br>
+            
+            Queue:<br><br>
+            __repr__()<br>
+            Append()<br>
+            Appendleft()<br>
+            Pop()<br>
+            Popleft<br>
+            Clear()<br>
+        </h2>
+    </div>
+
+    <div class="info">
         <h1 class="info-label">V 1.1.0</h1>
-        <h2 class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur repellendus itaque voluptatibus deserunt vero ad magni fugiat optio libero quis et, porro incidunt sint consequatur nihil iure! Enim, iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad quidem accusantium, assumenda quibusdam eum dolore? Dolores optio deleniti sed, fugit, exercitationem tempore fuga illo perspiciatis numquam vel repellendus hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt fuga rerum quia nobis itaque officia pariatur maxime, libero, quas quaerat soluta explicabo nemo. Ipsam placeat distinctio ratione repudiandae magni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima possimus tenetur atque sunt asperiores commodi quis reiciendis dolorem blanditiis delectus facilis ea repellendus quisquam, quae, deleniti architecto hic cum voluptate.</h2>
+        <h2 class="info-text">Added: <br> <br>
+        get_int_line() <br>
+        get_float_line() <br>
+        get_bool_line() <br> <br>
+
+        int_put() <br>
+        float_put() <br>
+        list_put() <br>
+        tupel_put() <br>
+
+        </h2>
     </div>
 </div> 
 {% endblock %}
